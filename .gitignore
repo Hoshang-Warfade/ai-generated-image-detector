@@ -216,3 +216,87 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+
+# ==========================================
+# AI-Generated Image Detector
+# Project-specific Git ignore rules
+# ==========================================
+
+# Datasets and local data
+/data/
+/training/data/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Trained models and checkpoints
+*.keras
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.ckpt.*
+*.onnx
+*.tflite
+*.weights.h5
+
+# TensorFlow SavedModel artifacts
+saved_model.pb
+fingerprint.pb
+variables/
+assets/
+
+# Large experiment outputs
+/experiments/checkpoints/
+/experiments/artifacts/
+/experiments/runs/
+/training/checkpoints/
+/training/outputs/
+
+# TensorBoard logs
+events.out.tfevents.*
+
+# Kaggle credentials
+kaggle.json
+
+# Additional environment and secret files
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Node.js and React
+node_modules/
+**/node_modules/
+**/dist/
+**/build/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Frontend environment files
+/frontend/.env*
+!/frontend/.env.example
+
+# Local IDE settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Docker overrides
+docker-compose.override.yml
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
